@@ -1,0 +1,48 @@
+{{extend 'layout.html'}}
+<head>
+	<link rel="stylesheet" href="{{=URL('static','css/style-login.css')}}">
+  <link rel="stylesheet" href="{{=URL('static','css/style-button.css')}}">
+
+</head>
+
+  <body>
+
+    
+    {{if msj=="":}}
+      <div class="col-xs-12 col-md-12 col-md-offset-4">
+
+        <form action="{{=URL('inicio','indexAlumno')}}" method="post">
+          <center>
+          <header style="font-size: 25px">Ingreso al sistema</header>
+          </center> 
+          <button id="alumno">Alumno</button>
+
+          <form action="{{=URL('inicio','indexProfesor')}}" method="post">
+          <button type="submit" id="profesor">Profesor</button>
+          <br>
+          <br>
+        </form>
+        </form>
+
+      </div>
+      {{elif msj=="Bienvenido":}}
+        <div  class=" hidden col-xs-12 col-xs-offset-4 col-md-12 col-md-offset-4">
+          <form action="{{=URL('sistema','home')}}" name="form1">
+          <header>Inicio Correcto!</header>
+           <button type="submit" class="button button-block"/><h1>Acceder</h1></button>
+            <br>
+            <br>
+            <br>
+           </form>
+         </div>
+
+         <script src="{{=URL('static','js/inicio.js')}}"></script>
+      {{else:}}
+
+      {{pass}}
+ 
+    
+    
+    
+    
+  </body>
