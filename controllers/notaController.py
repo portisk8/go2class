@@ -1,0 +1,2 @@
+def nota():
+	return dict()

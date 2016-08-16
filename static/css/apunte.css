@@ -27,10 +27,11 @@
 	background-color: #2e64fe;
 	border-radius: 10px;
 	align: center;
+	width: 300px;
 }
 
 .btn{
-	margin-left: 25%;
+
 	background: #3e3f3a;
 	color: white;
 }

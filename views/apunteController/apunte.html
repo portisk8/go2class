@@ -1,0 +1,37 @@
+{{extend 'layout.html'}}
+<head>
+	<link rel="stylesheet" href="{{=URL('static','css/style-login.css')}}">
+	<link rel="stylesheet" href="{{=URL('static','css/apunte.css')}}">	
+</head>
+<body>
+	<div class="col-xs-12 col-md-12 col-md-offset-4 box">
+		<center>
+          <header style="font-size: 25px">Matematicas</header>
+          </center> 
+          <div>
+          <center>
+          <h3>Bibliografia</h3>
+          	
+          </center>
+          <HR>
+          <div>
+          <center>
+          	
+          <a href="{{=URL('foro', 'index.html')}}"><button class="btn btnFormat" >Link1</button></a>
+          <br>
+          <a href="{{=URL('juego', 'index.html')}}"><button class="btn btnFormat"> Wikipedia</button></a>
+          </center>	
+          <center>
+          <h3>Apuntes Gral</h3>
+          	
+          </center>
+          <HR>
+          <center>
+          	
+          <a href="{{=URL('apunteController', 'apunte.html')}}"><button class="btn btnFormat"> PDF</button></a>
+          <a href="{{=URL('materiaController', 'matematica.html')}}"><button class="btn btnFormat"> Otro Archivo</button></a>
+          </center>
+          </div>
+          </div>
+	</div>
+</body>

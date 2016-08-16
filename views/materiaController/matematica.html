@@ -1,0 +1,19 @@
+{{extend 'layout.html'}}
+<head>
+	<link rel="stylesheet" href="{{=URL('static','css/style-login.css')}}">
+	<link rel="stylesheet" href="{{=URL('static','css/materia.css')}}">	
+</head>
+<body>
+	<div class="col-xs-12 col-md-12 col-md-offset-4 box">
+		<center>
+          <header style="font-size: 25px">Matematicas</header>
+          </center> 
+          <div style="text-align:center;">
+          <a href="{{=URL('foro', 'index.html')}}"><button class="btn col-md-6 col-md-offset-2 btnFormat" >foro</button></a>
+          <a href="{{=URL('notaController', 'nota.html')}}"><button class="btn col-md-6 col-md-offset-2 btnFormat" >Notas</button></a>
+          <a href="{{=URL('juego', 'index.html')}}"><button class="btn col-md-6 btnFormat"> Juegos</button></a>
+          <a href="{{=URL('apunteController', 'apunte.html')}}"><button class="btn col-md-6 btnFormat"> Apuntes</button></a>
+          <a href="{{=URL('materiaController', 'matematica.html')}}"><button class="btn col-md-6 btnFormat"> Mp Profesor</button></a>
+          </div>
+	</div>
+</body>

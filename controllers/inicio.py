@@ -16,6 +16,7 @@ def login():
 	if len(usuario)!=0:
 		session.usuario = datos.Usuario
 		session.tipo = usuario[0].Tipo
+		redirect(URL('sistema','home'))
 		return dict(msj="Bienvenido")
 
 	else:
