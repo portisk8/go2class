@@ -1,6 +1,6 @@
 body{
-    background-color: rgba(200, 200, 0, .1);
-
+    background: url("../images/back2.jpg") no-repeat center center fixed;
+    
     background-position: center center; /* imagen de fondo este centrada vertical y horizontalmente */
     
     background-repeat: no-repeat;/* La imagen de fondo no se repite */
