@@ -1,1 +1,25 @@
 {{extend 'layout.html'}}
+<head>
+	<link rel="stylesheet" href="{{=URL('static','css/style-login.css')}}">
+	<link rel="stylesheet" href="{{=URL('static','css/style-button-2.css')}}">
+	<link rel="stylesheet" href="{{=URL('static','css/style-m.css')}}">
+</head>
+
+<body>
+	<br>
+	<br>
+	<br>
+	<div class="col-xs-12 col-md-12 col-md-offset-4 box">
+	    <center>
+	    <header style="font-size: 25px">¡Bienvenido!</header>
+	    </center>
+
+	    <br>
+	    <center><a href="{{=URL('foro','index.html')}}"><button class="buttoncito">Foro</button></a></center>
+	    <br>
+	    <center><a href="{{=URL('materiaController','materia.html')}}"><button class="buttoncito">Materias</button></center>
+	    <br>
+	    <center><a href="{{=URL('calendarioController','calendario.html')}}"><button class="buttoncito">Calendario</button></center>
+	    <br>
+	</div>
+</body>

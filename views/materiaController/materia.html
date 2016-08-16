@@ -1,0 +1,20 @@
+{{extend 'layout.html'}}
+<head>
+	<link rel="stylesheet" href="{{=URL('static','css/style-login.css')}}">
+	<link rel="stylesheet" href="{{=URL('static','css/materia.css')}}">	
+</head>
+<body>
+	<div class="col-xs-12 col-md-12 col-md-offset-4 box">
+		<center>
+          <header style="font-size: 25px">Materias</header>
+          </center> 
+          <div style="text-align:center;">
+          <button class="btn col-md-6 col-md-offset-2 btnFormat" ><a href="{{=URL('materiaController', 'matematica.html')}}">Matematica</a></button>
+          <button class="btn col-md-6 btnFormat"><a href="{{=URL('materiaController', 'matematica.html')}}"> Lengua</a></button>
+          <button class="btn col-md-6 btnFormat"><a href="{{=URL('materiaController', 'matematica.html')}}"> Geografia</a></button>
+          <button class="btn col-md-6 btnFormat"><a href="{{=URL('materiaController', 'matematica.html')}}"> Musica</a></button>
+          <button class="btn col-md-6 btnFormat"><a href="{{=URL('materiaController', 'matematica.html')}}"> Historia</a></button>
+          <button class="btn col-md-6 btnFormat"><a href="{{=URL('materiaController', 'matematica.html')}}"> Cs. Naturales</a></button>
+          </div>
+	</div>
+</body>
